@@ -135,7 +135,3 @@ if __name__ == "__main__":
     # Scan each image in X folder to see if needs NSFW censoring (i.e. blurring) and export censored version into a results folder. For each image we also generate an exported classes JSON file
     m.censor_folder("/Users/lornn/Desktop/Nudity Filter/Test Images/",
                     "/Users/lornn/Desktop/Nudity Filter/Results/")
-
-    # Check if specific image needs censoring and if so export this version into a results folder... And show the actual image on screen too
-    # print(m.censor("/Users/lornn/Desktop/Nudity Filter/Image Dump/prefix_pornhub_101685.jpeg",
-    #       "/Users/lornn/Desktop/Nudity Filter/Results/blurred_prefix_pornhub_101685.jpeg", True))

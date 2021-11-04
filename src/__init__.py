@@ -1,1 +1,1 @@
-from .detector import Detector as NudeDetector
+from .filter import Filter as NudeDetector

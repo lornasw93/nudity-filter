@@ -22,7 +22,7 @@ Also to note:
 This is an example to show what your results could look like when running this command
 
 ```
-py detector.py
+py filter.py
 ```
 
 ### Before
@@ -89,22 +89,16 @@ cd src
 
 Where you can now run your commands i.e. 
 
-See 1st example to see `py detector.py` in 🎥 action. This command does the following: (high-level overview)
+See 1st example to see `py filter.py` in 🎥 action. This command does the following: (high-level overview)
 
 1. Loop through all images within a specific folder location ("Test Images") on your local drive
 2. If NSFW image, a JSON file is generated (in "Results") which contains coordinates of area to blur, scoring and label
 3. Image is duplicated with blurring effect on top where appropriate and then saved in a "Results" folder
 
 ```
-python detector.py
+python filter.py
 ```
-
-!!!!This command isn't working yet!!!! [WIP]
-
-```
-python classifier.py
-```
-
+ 
 ## 👨‍🏫 Classes
 
 The class data per image is exported to a single JSON file.
@@ -118,7 +112,7 @@ _This is lifted from the original repo, copied here for ease._
 | safe   | Image/Video is not sexually explicit |
 | unsafe |   Image/Video is sexually explicit   |
 
-### Default Detector
+### Default Filter
 
 | Class    |       Description       |
 | ------------------- | :-------------------------------------------: |
@@ -139,7 +133,7 @@ _This is lifted from the original repo, copied here for ease._
 | EXPOSED_BREAST_M    |  Exposed Breast; Male   |
 | EXPOSED_GENITALIA_M | Exposed Genitalia; Male |
 
-### Base Detector
+### Base Filter
 
 | Class    |         Description          |
 | ------------------- | :--------------------------: |

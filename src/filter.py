@@ -3,7 +3,7 @@ import cv2
 import pydload
 import numpy as np
 import onnxruntime
-from detector_utils import preprocess_image
+from utils import preprocess_image
 import json
 
 
@@ -23,13 +23,13 @@ FILE_URLS = {
 }
 
 
-class Detector:
+class Filter:
     detection_model = None
     classes = None
 
     def __init__(self, model_name="default"):
         """
-        model = Detector()
+        model = Filter()
         """
         checkpoint_url = FILE_URLS[model_name]["checkpoint"]
         classes_url = FILE_URLS[model_name]["classes"]
@@ -130,8 +130,7 @@ class Detector:
 
 
 if __name__ == "__main__":
-    m = Detector()
+    f = Filter()
 
     # Scan each image in X folder to see if needs NSFW censoring (i.e. blurring) and export censored version into a results folder. For each image we also generate an exported classes JSON file
-    m.censor_folder("/Users/lornn/Desktop/Nudity Filter/Test Images/",
-                    "/Users/lornn/Desktop/Nudity Filter/Results/")
+    f.censor_folder("/Users/lornn/Desktop/Nudity Filter/Test Images/", "/Users/lornn/Desktop/Nudity Filter/Results/")

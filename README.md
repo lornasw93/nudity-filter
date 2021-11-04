@@ -19,18 +19,17 @@ Also to note:
 
 ## Example
 
-This is an example to show what your results could look like when running the below command
+This is an example to show what your results could look like when running this command
 
 ```
 py detector.py
 ```
 
 ### Before
-Check for the file within /example/nude01.jpg
+(Check for the file within /example/nude01.jpg)
 
 ### After
-After running the above command, these are the results.
-
+After running the above command, these are the results
 #### JSON File
 File contents (within /example/flagged_nude01.json)
 

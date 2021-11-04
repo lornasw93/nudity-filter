@@ -1,0 +1,5 @@
+opencv-python
+pydload
+opencv-contrib-python
+numpy
+onnxruntime

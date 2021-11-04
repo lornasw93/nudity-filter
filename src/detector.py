@@ -126,7 +126,7 @@ class Detector:
                             fp = out_folder_path + "blurred_" + img_filename
                             cv2.imwrite(fp, image)
                     else:
-                        print("# Ignored file")
+                        print("# Ignored censorsing image " + img_filename)
 
 
 if __name__ == "__main__":

@@ -95,8 +95,6 @@ class Detector:
         return processed_boxes
 
     def censor_folder(self, folder_path, out_folder_path, parts_to_blur=[]):
-        print(os.listdir(folder_path))
-        
         for img_filename in os.listdir(folder_path):
             path = os.path.join(folder_path, img_filename)
             

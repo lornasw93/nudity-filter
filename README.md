@@ -11,7 +11,7 @@ Changes to original code:
 - (Renamed project after changes to nudity-filter)
 - Blur instead of black rectangles
 - By folder instead of per single file
-- Result classes are exported as a JSON file (per flagged image)
+- Result classes are exported as a single JSON file
 
 Also to note:
 
@@ -37,8 +37,8 @@ File contents (within /example/flagged_nude01.json)
 {
     "items": [
         {
-            "imageBlurredUrl": "/Users/lornn/Desktop/Nudity Filter/Test Images/blurred_nude01.jpg",
-            "imageOriginalUrl": "/Users/lornn/Desktop/Nudity Filter/Test Images/nude01.jpg",
+            "imageBlurredUrl": "/example/blurred_nude01.jpg",
+            "imageOriginalUrl": "/example/nude01.jpg",
             "results": [
                 {
                     "box": [ 76, 125, 151, 203 ],

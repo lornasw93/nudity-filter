@@ -34,28 +34,56 @@ After running the above command, these are the results
 File contents (within /example/flagged_nude01.json)
 
 ```
-[
-    {
-        "box": [ 76, 125, 151, 203 ],
-        "score": 0.847710371017456,
-        "label": "FACE_F"
-    },
-    {
-        "box": [ 146, 218, 187, 253 ],
-        "score": 0.8441938161849976,
-        "label": "EXPOSED_ARMPITS"
-    },
-    {
-        "box": [ 240, 363, 377, 497 ],
-        "score": 0.8047983646392822,
-        "label": "EXPOSED_BUTTOCKS"
-    },
-    {
-        "box": [ 65, 251, 127, 327 ],
-        "score": 0.7035146355628967,
-        "label": "EXPOSED_BREAST_F"
-    }
-]
+{
+    "items": [
+        {
+            "imageBlurredUrl": "blurred_/Users/lornn/Desktop/Nudity Filter/Test Images/nude01.jpg",
+            "imageOriginalUrl": "/Users/lornn/Desktop/Nudity Filter/Test Images/nude01.jpg",
+            "results": [
+                {
+                    "box": [
+                        76,
+                        125,
+                        151,
+                        203
+                    ],
+                    "label": "FACE_F",
+                    "score": 0.847710371017456
+                },
+                {
+                    "box": [
+                        146,
+                        218,
+                        187,
+                        253
+                    ],
+                    "label": "EXPOSED_ARMPITS",
+                    "score": 0.8441938161849976
+                },
+                {
+                    "box": [
+                        240,
+                        363,
+                        377,
+                        497
+                    ],
+                    "label": "EXPOSED_BUTTOCKS",
+                    "score": 0.8047983646392822
+                },
+                {
+                    "box": [
+                        65,
+                        251,
+                        127,
+                        327
+                    ],
+                    "label": "EXPOSED_BREAST_F",
+                    "score": 0.7035146355628967
+                }
+            ]
+        }
+    ]
+}
 ```
 
 #### Image

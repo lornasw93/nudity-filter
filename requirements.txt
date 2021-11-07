@@ -1,5 +1,5 @@
-opencv-python
-pydload
-opencv-contrib-python
-numpy
-onnxruntime
+opencv-python=4.5.4.58
+pydload=1.0.9
+opencv-contrib-python=4.5.4.58
+numpy=1.19.5
+onnxruntime=1.9.0

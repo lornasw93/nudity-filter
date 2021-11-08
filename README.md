@@ -11,7 +11,7 @@ Changes to original code:
 - (Renamed project after changes to nudity-filter)
 - Blur instead of black rectangles
 - By folder instead of per single file
-- Result classes are exported as a JSON file (per flagged image)
+- Result classes are exported as single JSON file
 
 Also to note:
 
@@ -31,31 +31,39 @@ py filter.py
 ### After
 After running the above command, these are the results
 #### JSON File
-File contents (within /example/flagged_nude01.json)
+File contents (within /example/results.json)
 
 ```
-[
-    {
-        "box": [ 76, 125, 151, 203 ],
-        "score": 0.847710371017456,
-        "label": "FACE_F"
-    },
-    {
-        "box": [ 146, 218, 187, 253 ],
-        "score": 0.8441938161849976,
-        "label": "EXPOSED_ARMPITS"
-    },
-    {
-        "box": [ 240, 363, 377, 497 ],
-        "score": 0.8047983646392822,
-        "label": "EXPOSED_BUTTOCKS"
-    },
-    {
-        "box": [ 65, 251, 127, 327 ],
-        "score": 0.7035146355628967,
-        "label": "EXPOSED_BREAST_F"
-    }
-]
+{
+    "items": [
+        {
+            "imageBlurredUrl": "C:\\Users\\lornn\\Desktop\\Nudity Filter\\results\\blurred_nude01.jpg",
+            "imageOriginalUrl": "C:\\Users\\lornn\\Desktop\\Nudity Filter\\test images\\nude01.jpg",
+            "results": [
+                {
+                    "box": [ 76, 125, 151, 203 ],
+                    "label": "FACE_F",
+                    "score": 0.847710371017456
+                },
+                {
+                    "box": [ 146, 218, 187, 253 ],
+                    "label": "EXPOSED_ARMPITS",
+                    "score": 0.8441938161849976
+                },
+                {
+                    "box": [ 240, 363, 377, 497 ],
+                    "label": "EXPOSED_BUTTOCKS",
+                    "score": 0.8047983646392822
+                },
+                {
+                    "box": [ 65, 251, 127, 327 ],
+                    "label": "EXPOSED_BREAST_F",
+                    "score": 0.7035146355628967
+                }
+            ]
+        }
+    ]
+}
 ```
 
 #### Image
@@ -145,6 +153,4 @@ _This is lifted from the original repo, copied here for ease._
 | EXPOSED_BREAST_M    |     Exposed Breast; Male     |
 
 ## 👀 Notes
-
-- If see 'None' in cmd line, means cv2.imread() file was unable to be opened
 - The onnxruntime package takes a while to install

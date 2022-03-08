@@ -16,6 +16,7 @@ Changes to original code:
 Also to note:
 
 - There have been some images that have been blurred when they shouldn't have and vice versa. I'd est. ~80% are correct (by manually checking results)
+- `C:\repos\nudity-filter` and then `pip install -r requirements.txt` to install necessary packages
 
 ## Example
 
